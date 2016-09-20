@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453D4BF8334779EA2D7C0C40 /* Pods_swift_owner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFEE263E51F8E09C4F19EB8 /* Pods_swift_owner.framework */; };
+		A604C4891D90EF580050E05D /* GRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604C4881D90EF580050E05D /* GRProgressHUD.swift */; };
+		A604C48B1D911E760050E05D /* GRRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604C48A1D911E760050E05D /* GRRefresh.swift */; };
+		A604C4911D91291B0050E05D /* GRStoreInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A604C4901D91291B0050E05D /* GRStoreInfo.m */; };
+		A604C4941D912D5D0050E05D /* GRToAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A604C4931D912D5D0050E05D /* GRToAppStore.m */; };
 		A66ED2EA1D8E7773003105FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66ED2E91D8E7773003105FC /* AppDelegate.swift */; };
 		A66ED2EC1D8E7773003105FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66ED2EB1D8E7773003105FC /* ViewController.swift */; };
 		A66ED2EF1D8E7773003105FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66ED2ED1D8E7773003105FC /* Main.storyboard */; };
@@ -38,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FFEE263E51F8E09C4F19EB8 /* Pods_swift_owner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_owner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A604C4881D90EF580050E05D /* GRProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRProgressHUD.swift; sourceTree = "<group>"; };
+		A604C48A1D911E760050E05D /* GRRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRRefresh.swift; sourceTree = "<group>"; };
+		A604C48E1D91291B0050E05D /* swift-owner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swift-owner-Bridging-Header.h"; path = "Utiles/swift-owner-Bridging-Header.h"; sourceTree = "<group>"; };
+		A604C48F1D91291B0050E05D /* GRStoreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRStoreInfo.h; sourceTree = "<group>"; };
+		A604C4901D91291B0050E05D /* GRStoreInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRStoreInfo.m; sourceTree = "<group>"; };
+		A604C4921D912D5D0050E05D /* GRToAppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRToAppStore.h; sourceTree = "<group>"; };
+		A604C4931D912D5D0050E05D /* GRToAppStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRToAppStore.m; sourceTree = "<group>"; };
 		A66ED2E61D8E7773003105FC /* swift-owner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-owner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66ED2E91D8E7773003105FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A66ED2EB1D8E7773003105FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +68,8 @@
 		A66ED3351D8E8332003105FC /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		A6A3EFD21D8E9E0A0062E586 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A6A3EFD41D8E9ED00062E586 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		AC44B6833A8D7EC7B0B2B848 /* Pods-swift-owner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-owner.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-owner/Pods-swift-owner.release.xcconfig"; sourceTree = "<group>"; };
+		AE25B942DB62F2C8681F8A66 /* Pods-swift-owner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-owner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-owner/Pods-swift-owner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453D4BF8334779EA2D7C0C40 /* Pods_swift_owner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371F31D97E5A8D7733D04F13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE25B942DB62F2C8681F8A66 /* Pods-swift-owner.debug.xcconfig */,
+				AC44B6833A8D7EC7B0B2B848 /* Pods-swift-owner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		45305A7DA92F1EEA4D570415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FFEE263E51F8E09C4F19EB8 /* Pods_swift_owner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A66ED2DD1D8E7773003105FC = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +122,8 @@
 				A66ED2FD1D8E7773003105FC /* swift-ownerTests */,
 				A66ED3081D8E7773003105FC /* swift-ownerUITests */,
 				A66ED2E71D8E7773003105FC /* Products */,
+				371F31D97E5A8D7733D04F13 /* Pods */,
+				45305A7DA92F1EEA4D570415 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +142,7 @@
 			children = (
 				A66ED2E91D8E7773003105FC /* AppDelegate.swift */,
 				A66ED2EB1D8E7773003105FC /* ViewController.swift */,
+				A604C48E1D91291B0050E05D /* swift-owner-Bridging-Header.h */,
 				A66ED3341D8E830F003105FC /* Utiles */,
 				A66ED3311D8E7C10003105FC /* Extensions */,
 				A66ED2ED1D8E7773003105FC /* Main.storyboard */,
@@ -149,6 +185,12 @@
 			isa = PBXGroup;
 			children = (
 				A66ED3351D8E8332003105FC /* GlobalVariables.swift */,
+				A604C4881D90EF580050E05D /* GRProgressHUD.swift */,
+				A604C48A1D911E760050E05D /* GRRefresh.swift */,
+				A604C48F1D91291B0050E05D /* GRStoreInfo.h */,
+				A604C4901D91291B0050E05D /* GRStoreInfo.m */,
+				A604C4921D912D5D0050E05D /* GRToAppStore.h */,
+				A604C4931D912D5D0050E05D /* GRToAppStore.m */,
 			);
 			path = Utiles;
 			sourceTree = "<group>";
@@ -160,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A66ED30E1D8E7773003105FC /* Build configuration list for PBXNativeTarget "swift-owner" */;
 			buildPhases = (
+				0AAD37DDD9C43FBFC348B35C /* [CP] Check Pods Manifest.lock */,
 				A66ED2E21D8E7773003105FC /* Sources */,
 				A66ED2E31D8E7773003105FC /* Frameworks */,
 				A66ED2E41D8E7773003105FC /* Resources */,
+				55837BFC8497D255ADA72B7F /* [CP] Embed Pods Frameworks */,
+				DC877CE48238961E89E2848C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +267,7 @@
 					A66ED2E51D8E7773003105FC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3ZG7RQH8M7;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					A66ED2F91D8E7773003105FC = {
@@ -283,17 +329,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AAD37DDD9C43FBFC348B35C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55837BFC8497D255ADA72B7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-owner/Pods-swift-owner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC877CE48238961E89E2848C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-owner/Pods-swift-owner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A66ED2E21D8E7773003105FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A6A3EFD31D8E9E0A0062E586 /* UIViewExtension.swift in Sources */,
+				A604C4891D90EF580050E05D /* GRProgressHUD.swift in Sources */,
+				A604C48B1D911E760050E05D /* GRRefresh.swift in Sources */,
 				A66ED2EC1D8E7773003105FC /* ViewController.swift in Sources */,
 				A66ED2EA1D8E7773003105FC /* AppDelegate.swift in Sources */,
 				A66ED3361D8E8332003105FC /* GlobalVariables.swift in Sources */,
 				A66ED3331D8E7C57003105FC /* extensions.swift in Sources */,
+				A604C4941D912D5D0050E05D /* GRToAppStore.m in Sources */,
 				A6A3EFD51D8E9ED00062E586 /* UIImageExtension.swift in Sources */,
+				A604C4911D91291B0050E05D /* GRStoreInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,28 +539,35 @@
 		};
 		A66ED30F1D8E7773003105FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE25B942DB62F2C8681F8A66 /* Pods-swift-owner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3ZG7RQH8M7;
 				INFOPLIST_FILE = "swift-owner/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sen.swift-owner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-owner/Utiles/swift-owner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A66ED3101D8E7773003105FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC44B6833A8D7EC7B0B2B848 /* Pods-swift-owner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3ZG7RQH8M7;
 				INFOPLIST_FILE = "swift-owner/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sen.swift-owner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-owner/Utiles/swift-owner-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -72,6 +72,21 @@ enum iPhoneModel {
         }
     }
 }
+/**
+ 给控件添加弹簧动画  需要导入 pop
+ */
+//func setupButtonSpringAnimation(view: UIView) {
+//    let sprintAnimation = POPSpringAnimation(propertyNamed: kPOPViewScaleXY)
+//    sprintAnimation.fromValue = NSValue(CGPoint: CGPoint(x: 0.8, y: 0.8))
+//    sprintAnimation.toValue = NSValue(CGPoint: CGPoint(x: 1, y: 1))
+//    sprintAnimation.velocity = NSValue(CGPoint: CGPoint(x: 30, y: 30))
+//    sprintAnimation.springBounciness = 20
+//    view.pop_addAnimation(sprintAnimation, forKey: "springAnimation")
+//}
+
+
+
+
 
 /**
  获取缓存的json数据

@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        
+        //网络请求时，状态栏指示器
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         return true
     }
 

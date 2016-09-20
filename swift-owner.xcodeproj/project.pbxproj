@@ -12,6 +12,7 @@
 		A604C48B1D911E760050E05D /* GRRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604C48A1D911E760050E05D /* GRRefresh.swift */; };
 		A604C4911D91291B0050E05D /* GRStoreInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A604C4901D91291B0050E05D /* GRStoreInfo.m */; };
 		A604C4941D912D5D0050E05D /* GRToAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A604C4931D912D5D0050E05D /* GRToAppStore.m */; };
+		A604C4961D9133210050E05D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604C4951D9133210050E05D /* Api.swift */; };
 		A66ED2EA1D8E7773003105FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66ED2E91D8E7773003105FC /* AppDelegate.swift */; };
 		A66ED2EC1D8E7773003105FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66ED2EB1D8E7773003105FC /* ViewController.swift */; };
 		A66ED2EF1D8E7773003105FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66ED2ED1D8E7773003105FC /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		A604C4901D91291B0050E05D /* GRStoreInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRStoreInfo.m; sourceTree = "<group>"; };
 		A604C4921D912D5D0050E05D /* GRToAppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRToAppStore.h; sourceTree = "<group>"; };
 		A604C4931D912D5D0050E05D /* GRToAppStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRToAppStore.m; sourceTree = "<group>"; };
+		A604C4951D9133210050E05D /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		A66ED2E61D8E7773003105FC /* swift-owner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-owner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66ED2E91D8E7773003105FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A66ED2EB1D8E7773003105FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				A66ED2E91D8E7773003105FC /* AppDelegate.swift */,
 				A66ED2EB1D8E7773003105FC /* ViewController.swift */,
+				A604C4951D9133210050E05D /* Api.swift */,
 				A604C48E1D91291B0050E05D /* swift-owner-Bridging-Header.h */,
 				A66ED3341D8E830F003105FC /* Utiles */,
 				A66ED3311D8E7C10003105FC /* Extensions */,
@@ -387,6 +390,7 @@
 				A604C48B1D911E760050E05D /* GRRefresh.swift in Sources */,
 				A66ED2EC1D8E7773003105FC /* ViewController.swift in Sources */,
 				A66ED2EA1D8E7773003105FC /* AppDelegate.swift in Sources */,
+				A604C4961D9133210050E05D /* Api.swift in Sources */,
 				A66ED3361D8E8332003105FC /* GlobalVariables.swift in Sources */,
 				A66ED3331D8E7C57003105FC /* extensions.swift in Sources */,
 				A604C4941D912D5D0050E05D /* GRToAppStore.m in Sources */,

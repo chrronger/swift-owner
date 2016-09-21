@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 let SCREEN_BOUNDS = UIScreen.main.bounds
 let SCREEN_WIDTH = SCREEN_BOUNDS.width
 let SCREEN_HEIGHT = SCREEN_BOUNDS.height
@@ -72,6 +73,13 @@ enum iPhoneModel {
         }
     }
 }
+
+//
+
+
+
+
+
 /**
  给控件添加弹簧动画  需要导入 pop
  */

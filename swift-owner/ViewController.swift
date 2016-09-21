@@ -8,9 +8,9 @@
 
 import UIKit
 import StoreKit  //商店
-import YYCache
 
-class ViewController: UIViewController,SKStoreProductViewControllerDelegate {
+
+class ViewController: UIViewController,SKStoreProductViewControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     lazy var tabview:UITableView = {
         let _tabview = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: .plain)
@@ -58,10 +58,71 @@ class ViewController: UIViewController,SKStoreProductViewControllerDelegate {
 //     })
 //    }
     
-   
-    ///头像
+    /**
+     配置imagePicker
+     
+     - parameter sourceType:  资源类型
+     */
+    let imagePickerC = UIImagePickerController()
+    func setupImagePicker(sourceType: UIImagePickerControllerSourceType) {
+        
+//        imagePickerC.view.backgroundColor = COLOR_ALL_BG
+        imagePickerC.delegate = self
+        imagePickerC.sourceType = sourceType
+        imagePickerC.allowsEditing = true
+        imagePickerC.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+    }
+
+    ///头像按钮点击      上传的时候需要base64加密
+    func didTappedAvatarButton() {
+        let alertC = UIAlertController()
+        let takeAction = UIAlertAction(title: "拍照", style: UIAlertActionStyle.default, handler: { (action) in
+            if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+                GRProgressHUD.showInfoWithStatus(status: "摄像头不可用")
+                return
+            }
+            self.setupImagePicker(sourceType: .camera)
+            self.present(self.imagePickerC, animated: true, completion: {})
+        })
+        let photoLibraryAction = UIAlertAction(title: "从相册选择照片", style: UIAlertActionStyle.default, handler: { (action) in
+            if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+                GRProgressHUD.showInfoWithStatus(status: "相册不可用")
+                return
+            }
+            self.setupImagePicker(sourceType: .photoLibrary)
+            self.present(self.imagePickerC, animated: true, completion: {})
+        })
+        let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel, handler: { (action) in
+            
+        })
+        alertC.addAction(takeAction)
+        alertC.addAction(photoLibraryAction)
+        alertC.addAction(cancelAction)
+        self.present(alertC, animated: true, completion: {})
+    }
+
+    // MARK: - UINavigationControllerDelegate, UIImagePickerControllerDelegate
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        let newImage = image.resizeImageWithNewSize(newSize: CGSize(width: 150, height: 150))
+        uploadUserAvatar(image: newImage)
+        picker.dismiss(animated: true, completion: nil)
+    }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
     
+    /**
+     上传用户头像
+     
+     - parameter image: 头像图   上传的时候需要base64加密
+     */
+    func uploadUserAvatar(image: UIImage) {
+//        let imageData = UIImageJPEGRepresentation(avatarImage, 1)!
+//        let imageBase64 = imageData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue:0))
+        
+    }
+
     
     
     

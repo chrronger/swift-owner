@@ -22,6 +22,7 @@
 		A66ED30A1D8E7773003105FC /* swift_ownerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66ED3091D8E7773003105FC /* swift_ownerUITests.swift */; };
 		A66ED3331D8E7C57003105FC /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66ED3321D8E7C57003105FC /* extensions.swift */; };
 		A66ED3361D8E8332003105FC /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66ED3351D8E8332003105FC /* GlobalVariables.swift */; };
+		A69EF6591D913AA100DDF4BF /* GRNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69EF6581D913AA100DDF4BF /* GRNetworkTool.swift */; };
 		A6A3EFD31D8E9E0A0062E586 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3EFD21D8E9E0A0062E586 /* UIViewExtension.swift */; };
 		A6A3EFD51D8E9ED00062E586 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3EFD41D8E9ED00062E586 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		A66ED30B1D8E7773003105FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A66ED3321D8E7C57003105FC /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		A66ED3351D8E8332003105FC /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		A69EF6581D913AA100DDF4BF /* GRNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRNetworkTool.swift; sourceTree = "<group>"; };
 		A6A3EFD21D8E9E0A0062E586 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A6A3EFD41D8E9ED00062E586 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		AC44B6833A8D7EC7B0B2B848 /* Pods-swift-owner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-owner.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-owner/Pods-swift-owner.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				A66ED3351D8E8332003105FC /* GlobalVariables.swift */,
 				A604C4881D90EF580050E05D /* GRProgressHUD.swift */,
 				A604C48A1D911E760050E05D /* GRRefresh.swift */,
+				A69EF6581D913AA100DDF4BF /* GRNetworkTool.swift */,
 				A604C48F1D91291B0050E05D /* GRStoreInfo.h */,
 				A604C4901D91291B0050E05D /* GRStoreInfo.m */,
 				A604C4921D912D5D0050E05D /* GRToAppStore.h */,
@@ -392,6 +395,7 @@
 				A66ED2EA1D8E7773003105FC /* AppDelegate.swift in Sources */,
 				A604C4961D9133210050E05D /* Api.swift in Sources */,
 				A66ED3361D8E8332003105FC /* GlobalVariables.swift in Sources */,
+				A69EF6591D913AA100DDF4BF /* GRNetworkTool.swift in Sources */,
 				A66ED3331D8E7C57003105FC /* extensions.swift in Sources */,
 				A604C4941D912D5D0050E05D /* GRToAppStore.m in Sources */,
 				A6A3EFD51D8E9ED00062E586 /* UIImageExtension.swift in Sources */,

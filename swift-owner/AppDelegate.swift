@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
         
-        //网络请求时，状态栏指示器
+        //网络请求时，状态栏指示器  (放在发起网络请求的时候)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
         return true

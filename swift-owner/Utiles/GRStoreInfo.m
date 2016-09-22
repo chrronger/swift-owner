@@ -118,6 +118,8 @@
         return [[manager attributesOfItemAtPath:filePath error:nil] fileSize];
     }
     return 0;
+    
+    
 }
 
 

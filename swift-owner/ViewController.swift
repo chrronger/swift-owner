@@ -9,8 +9,50 @@
 import UIKit
 import StoreKit  //商店
 
+fileprivate struct Constant {
+    static let path   = "path"
+    static let circle = "circle"
+}
 
-class ViewController: UIViewController,SKStoreProductViewControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+
+
+class ViewController: UIViewController,SKStoreProductViewControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,CAAnimationDelegate {
+    //MARK:test1  init
+    func createLabel() -> UILabel {
+        return Init(UILabel(frame: CGRect.zero)) {
+            $0.backgroundColor                           = .clear
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.textAlignment                             = .center
+            $0.textColor                                 = .white
+        }
+    }
+    
+    //MARK:test2  attach
+    func createDescriptionLabel(_ onView: UIView) -> UILabel {
+        let label = Init(createLabel()) {
+            $0.font          = UIFont(name: "OpenSans-Regular" , size: 14)
+            $0.numberOfLines = 0
+        }
+        onView.addSubview(label)
+        return label
+    }
+    //MARK:test3 
+    fileprivate func animationToRadius(_ radius: CGFloat, center: CGPoint, duration: Double) -> CABasicAnimation {
+        let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle: CGFloat(2.0 * M_PI), clockwise: true)
+        let animation = Init(CABasicAnimation(keyPath: Constant.path)) {
+            $0.duration            = duration
+            $0.toValue             = path.cgPath
+            $0.isRemovedOnCompletion = false
+            $0.fillMode            = kCAFillModeForwards
+            $0.delegate            = self
+            $0.timingFunction      = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        }
+        return animation
+    }
+
+    
+    
+    
     
     lazy var tabview:UITableView = {
         let _tabview = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: .plain)

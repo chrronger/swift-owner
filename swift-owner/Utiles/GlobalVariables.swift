@@ -8,6 +8,15 @@
 
 import UIKit
 
+ //MARK:2016.11.1 
+
+//方法使用viewController
+internal func Init<T> (_ value:T,block:(_ object:T) -> Void ) ->T {
+    block(value)
+    return value
+}
+
+
 
 let SCREEN_BOUNDS = UIScreen.main.bounds
 let SCREEN_WIDTH = SCREEN_BOUNDS.width
